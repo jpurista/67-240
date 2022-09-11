@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta name="description" content="Sharing some Images from trips with family">
+        <meta name="author" content="Juan Pablo Urista">
+        <meta name="keywords" content="Travel, Gallery, Blog">
+
+        <title>Home</title> <!-- displays current page in browser tab -->
+        <link rel="stylesheet" href="css/styles.css"> <!-- connects html to external css -->
+</head>
+
+<body>
+        <!-- header is consisted on all pages, only difference is which <a> has the curPage class -->
+        <header>
+                <h1><img src="images/logo.png" alt="The Places I've Been" id="logo" /></h1>
+                <nav>
+                        <a href="index.html" class="curPage">home</a>
+                        <a href="visited.html">visited</a>
+                        <a href="your-travels.html">your travels</a>
+                        <a href="about.html">about</a>
+                </nav>
+        </header>
+
+        <!-- the content class holds the bulk of the content for the page -->
+        <div class="content">
+                <p id="website-summary">
+                        For this assignment, I chose to focus on the vacations spent with my family since my first-year of high school. This includes some of my favorite pictures taken at some of the locations, more information about each trip and what we did, and a spot for website visitors to submit their own vacation experiences.
+                </p>
+                <br>
+                <figure> <!-- contains and image and caption, so they are enclosed in the figure element  -->
+                        <p>
+                        <img src="images/RoadSanFran.jpg" alt="Windy Road in San Francisco"
+                                title="Windy Road in San Francisco" id="main-image" />
+                        <figcaption>
+                                overlook in foggy San Francisco
+                        </figcaption>
+                        </p>
+                </figure>
+                <h4>More Places:</h4>
+                <p>
+                        <img src="images/ForestNM.jpg" alt="Forest in New Mexico" title="Forest in New Mexico"
+                                class="small-image" />
+                        <img src="images/Texas.jpg" alt="Texas Sky" title="Texas Sky" class="small-image" />
+                        <img src="images/WhiteSandsNM.jpg" alt="White Sands Park in New Mexico"
+                                title="White Sands Park in New Mexico" class="small-image" />
+                        <img src="images/MountainsNorthTX.jpg" alt="Mountains in West Texas"
+                                title="Mountains in West Texas" class="small-image" />
+                </p>
+        </div>
+        <br>
+        <!-- footer is consistent across all pages -->
+        <footer>
+                <p>&copy; Juan Pablo Urista</p>
+                <p><a href="mailto:jurista@andrew.cmu.edu">Email</a></p>
+        </footer>
+</body>
+</html>

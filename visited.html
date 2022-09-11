@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta name="description" content="Sharing specific information from each trip with family">
+        <meta name="author" content="Juan Pablo Urista">
+        <meta name="keywords" content="Travel, Gallery, Table">
+
+        <title>Places I've Visited</title> <!-- displays current page in browser tab -->
+        <link rel="stylesheet" href="css/styles.css"> <!-- connects html to external css -->
+</head>
+
+<body>
+        <!-- header is consisted on all pages, only difference is which <a> has the curPage class -->
+        <header>
+                <h1><img src="images/logo.png" alt="The Places I've Been" id="logo" /></h1>
+                <nav>
+                        <a href="index.html">home</a>
+                        <a href="visited.html" class="curPage">visited</a>
+                        <a href="your-travels.html">your travels</a>
+                        <a href="about.html">about</a>
+                </nav>
+        </header>
+
+        <!-- the content class holds the bulk of the content for the page -->
+        <div class="content">
+                <h2 class="subheading">Places I've Visited</h2>
+                <table id="travel-table">
+                        <thead>
+                                <tr>
+                                        <th scope="row">Region</th>
+                                        <th scope="col" colspan="2">United States</th>
+                                        <th scope="col" colspan="2">Latin America</th>
+                                        <th scope="col" colspan="2">Europe</th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                                <tr>
+                                        <th scope="row">State/Country</th>
+                                        <td>NM</td>
+                                        <td>CA</td>
+                                        <td>Peru</td>
+                                        <td>Mexico</td>
+                                        <td>Italy</td>
+                                        <td>Spain</td>
+                                </tr>
+                                <tr>
+                                        <th scope="row">Cities</th>
+                                        <td>Las Cruces, White Sands, & Alamogordo</td>
+                                        <td>Bay Area & Los Angeles</td>
+                                        <td>Cusco, Huancayo, Arequipa, & Maras</td>
+                                        <td>Mexico City, Cancun, Cuernavaca</td>
+                                        <td>Rome</td>
+                                        <td>Madrid, Granada, Seville, & Toledo</td>
+                                </tr>
+                                <tr>
+                                        <th scope="row">Season</th>
+                                        <td>Spring</td>
+                                        <td>Fall</td>
+                                        <td>Summer</td>
+                                        <td>Summer</td>
+                                        <td>Summer</td>
+                                        <td>Winter</td>
+                                </tr>
+                                <tr>
+                                        <th scope="row">Transportation</th>
+                                        <td>Driving</td>
+                                        <td>Flying, Driving</td>
+                                        <td>Flying, Bus</td>
+                                        <td>Flying</td>
+                                        <td>Flying, Metro</td>
+                                        <td>Flying, Driving</td>
+                                </tr>
+                                <tr>
+                                        <th scope="row">Activities</th>
+                                        <td>Hiking, Sand Sledding, Cave-exploring</td>
+                                        <td>Beach, Hiking, Whale-watching</td>
+                                        <td>Hiking, Boat ride, Llama-petting</td>
+                                        <td>Cave-exploring, Beach, Swimming, Kayaking</td>
+                                        <td>Hiking, Sight-seeing</td>
+                                        <td>Hiking, Sight-seeing, Cave-exploring</td>
+                                </tr>
+                                <tr>
+                                        <th scope="row">Favorite Food</th>
+                                        <td>Burritos</td>
+                                        <td>Pork Buns</td>
+                                        <td>Ceviche</td>
+                                        <td>Tacos Al Pastor</td>
+                                        <td>Spaghetti Carbonara</td>
+                                        <td>Patatas Bravas</td>
+                                </tr>
+
+                        </tbody>
+                        <tfoot>
+                                <tr>
+                                        <th scope="row">Overall Rating</th>
+                                        <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+                                        <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+                                        <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+                                        <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+                                        <td>&#9733;&#9733;&#9733;&#9733;&#9734;</td>
+                                        <td>&#9733;&#9733;&#9733;&#9733;&#9733;</td>
+                                </tr>
+                        </tfoot>
+                </table>
+        </div>
+        <br>
+        <!-- footer is consistent across all pages -->
+        <footer>
+                <p>&copy; Juan Pablo Urista</p>
+                <p><a href="mailto:jurista@andrew.cmu.edu">Email</a></p>
+        </footer>
+</body>
+
+</html>

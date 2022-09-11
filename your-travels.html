@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta name="description" content="Share your travel stories ">
+        <meta name="author" content="Juan Pablo Urista">
+        <meta name="keywords" content="Travel, Survey, Story">
+
+        <title>Your Travels</title> <!-- displays current page in browser tab -->
+        <link rel="stylesheet" href="css/styles.css"> <!-- connects html to external css -->
+</head>
+
+<body>
+        <!-- header is consisted on all pages, only difference is which <a> has the curPage class -->
+        <header>
+                <h1><img src="images/logo.png" alt="The Places I've Been" id="logo" /></h1>
+                <nav>
+                        <a href="index.html">home</a>
+                        <a href="visited.html">visited</a>
+                        <a href="your-travels.html" class="curPage">your travels</a>
+                        <a href="about.html">about</a>
+                </nav>
+        </header>
+
+        <!-- the content class holds the bulk of the content for the page -->
+        <div class="content">
+                <h2 class="subheading">Tell me about your travels!</h2>
+                <form action="http://www.example.com/review.php" method="get" id="travelForm">
+                        <fieldset>
+                                <legend>About You:</legend>
+                                <label>Name: <input type="text" name="name" size="30" maxlength="100"></label><br />
+                                <label>Email: <input type="email" name="email" size="30" maxlength="100"></label><br />
+                        </fieldset><br />
+                        <fieldset>
+                                <legend>Your Trip:</legend>
+                                <p>
+                                        <label for="region">What region did you travel to?</label>
+                                        <select name="region" id="region">
+                                                <option value="North America">North America</option>
+                                                <option value="South America">South America</option>
+                                                <option value="Europe">Europe</option>
+                                                <option value="Asia">Asia</option>
+                                                <option value="Pacific Islands">Pacific Islands</option>
+                                                <option value="Other">Other</option>
+                                        </select>
+                                </p>
+                                <p>
+                                        <label for="cityState"> What City/State did you travel to?</label>
+                                        <input type="text" name="cityState" id="cityState" />
+
+                                </p>
+                                <p>
+                                        <label for="rating">What would you rate this trip?</label>
+                                        <select name="stars" id="rating">
+                                                <option value="oneStar">&#9733;&#9734;&#9734;&#9734;&#9734;</option>
+                                                <option value="twoStars">&#9733;&#9733;&#9734;&#9734;&#9734;</option>
+                                                <option value="threeStart">&#9733;&#9733;&#9733;&#9734;&#9734;</option>
+                                                <option value="fourStars">&#9733;&#9733;&#9733;&#9733;&#9734;</option>
+                                                <option value="fiveStars">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+                                        </select>
+                                </p>
+                                <p>
+                                        Would you visit again?<br />
+                                        <label><input type="radio" name="rating" value="yes" /> Yes</label>
+                                        <label><input type="radio" name="rating" value="no" /> No</label>
+                                        <label><input type="radio" name="rating" value="maybe" /> Maybe</label>
+                                </p>
+                                <p>
+                                        <label for="comments">Comments:</label><br />
+                                        <textarea rows="4" cols="40" id="comments"></textarea>
+                                </p>
+                                <input type="submit" value="Submit" />
+                        </fieldset>
+                </form>
+        </div>
+        <br>
+        <!-- footer is consistent across all pages -->
+        <footer>
+                <p>&copy; Juan Pablo Urista</p>
+                <p><a href="mailto:jurista@andrew.cmu.edu">Email</a></p>
+        </footer>
+</body>
+</html>
